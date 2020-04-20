@@ -22,7 +22,7 @@ function createServer() {
         if(process.platform === 'win32') {
             return child_process.spawn('npm.cmd', ['run', 'dev']);
         } else {
-            return child_process.spawn('node', ['node_modules/bin/next']);
+            return child_process.spawn('node', ['node_modules/.bin/next']);
         }
     }
 
